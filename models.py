@@ -26,4 +26,4 @@ class User(UserMixin, db.Model):
     def get_id(self):
         return self.id
     def get(id):
-        return User.query.filter_by(email=email).first()
+        return User.query.filter_by(id=id).first()
